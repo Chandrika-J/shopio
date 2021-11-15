@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ecommerce Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="./assets/star.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300&family=Space+Mono:ital@1&display=swap"
+        rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+
+<body class="m-0 container-fluid">
+    <div class="container p-0 ">
+        <div class="d-inline-block col-xl-2 col-lg-2  col-md-2  logo-head col-sm-12">
+            <h4 class="d-inline-block shopio">Shopio</h4>
+            <div class="d-inline-block formenu ">
+                <p class="menu"></p>
+                <p class="menu"></p>
+                <p class="menu"></p>
+            </div>
+        </div>
+        <div class="d-inline-block col-xl-7 p-0 col-lg-7  col-md-5   col-sm-12">
+            <!-- <form action="search"> -->
+            <!-- <div class="input-field"> -->
+            <i class="fa fa-search float-right icon"></i>
+            <input type="text" placeholder="Search products & brands" class="input-field">
+
+            <!-- </div> -->
+            <!-- </form> -->
+
+        </div>
+        <div class="d-inline-block">
+            <a href="" class="col-xl-2 col-lg-2  col-md-2   col-sm-12 text-dark header-links">Download App</a>
+            <span class="col-xl-1  col-lg-1  col-md-1   col-sm-12 text-dark header-links">
+                <a href="" class="text-dark">Sign Up</a>
+                <span>/</span>
+                <a href="" class="text-dark">Login</a>
+            </span>
+        </div>
+    </div>
+
+    <div id="carouselExampleControls" class="carousel slide banner" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active cu-carousel-image" onclick="bannerClicked(1)">
+                <img class="d-block w-100" src="./assets/banner-1.jpg" alt="First slide">
+                <div class="carousel-caption banner-text d-none d-md-block">
+                    <h5>Some Text</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <button class="banner-action">Buy Now</button>
+                </div>
+            </div>
+            <div class="carousel-item cu-carousel-image" onclick="bannerClicked(2)">
+                <img class="d-block w-100" src="./assets/banner-2.jpeg" alt="Second slide">
+                <div class="carousel-caption banner-text d-none d-md-block">
+                    <h5>Some Text</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <button class="banner-action">Buy Now</button>
+                </div>
+            </div>
+            <div class="carousel-item cu-carousel-image" onclick="bannerClicked(3)">
+                <img class="d-block w-100" src="./assets/banner-3.jpg" alt="Third slide">
+                <div class="carousel-caption banner-text d-none d-md-block">
+                    <h5>Some Text</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <button class="banner-action">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <section class="container ">
+        <div class="section-gap">
+            <div class="section-header">
+                <div class="products titles d-inline-block">Popular Products</div>
+                <div class="arrow-icons d-inline-block">
+                    <p class="d-inline-block next-buttons">
+                        <</p> <p class="d-inline-block next-buttons">>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" bg-white letssee products-section">
+                    <img src="./assets\Apple MacBook Pro.jpeg" alt="Apple MacBook Pro"
+                        class="w-100 image1 product-image">
+                    <div class="producttext">
+                        <p class="image1text">Apple MacBook Pro</p>
+                        <p class="features">Core i5 7th Gen - (8 GB/512 GB SSD/Mac OS Sierra)</p>
+                        <div>
+                            <div class="d-inline-block">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                            </div>
+                            <div class="d-inline-block price-section">
+                                <p class="price">&#8377;93,500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" bg-white letssee products-section">
+                    <img src="./assets\Acer Aspire R3.jpeg" alt="Acer Aspire R3" class="w-100 image2 product-image">
+                    <div class="producttext">
+                        <p class="image1text">Acer Aspire R3</p>
+                        <p class="features">Pentium QuadCore 4th Gen- (4 GB/500 GB HDD/Windows) </p>
+                        <div>
+                            <div class="d-inline-block">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                            </div>
+                            <div class="d-inline-block price-section">
+                                <p class="price">&#8377;93,500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" bg-white letssee products-section">
+                    <img src="./assets\MicroMax Canvas.webp" alt="MicroMax Canvas" class="w-100 image2 product-image">
+                    <div class="producttext">
+                        <p class="image1text">MicroMax Canvas</p>
+                        <p class="features">(WIFI) Atom 4th Gen- (2 GB/32 GB EMMC)</p>
+                        <div>
+                            <div class="d-inline-block">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                            </div>
+                            <div class="d-inline-block price-section">
+                                <p class="price">&#8377;93,500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" bg-white letssee products-section">
+                    <img src="./assets\Acer One 10 Atom.png" alt="Acer One 10 Atom" class="w-100 image2 product-image">
+                    <div class="producttext">
+                        <p class="image1text">Acer One 10 Atom</p>
+                        <p class="features">5th Gen - (2 GB/32 GB EMMC) Storage/Windows 10HO</p>
+                        <div>
+                            <div class="d-inline-block">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                            </div>
+                            <div class="d-inline-block price-section">
+                                <p class="price">&#8377;93,500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" bg-white letssee products-section">
+                    <img src="./assets\Acer E15 Celeron.jpeg" alt="Acer E15 Celeron" class="w-100 image2 product-image">
+                    <div class="producttext">
+                        <p class="image1text">Acer E15 Celeron</p>
+                        <p class="features">Duel Core 4th Gen - (8 GB/500 GB HDD/LINUX) UN M</p>
+                        <div>
+                            <div class="d-inline-block">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                            </div>
+                            <div class="d-inline-block price-section">
+                                <p class="price">&#8377;93,500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" section-gap">
+            <div class="section-header">
+                <div class="products titles  d-inline-block">Featured Products</div>
+                <div class="arrow-icons d-inline-block">
+                    <p class="d-inline-block next-buttons">
+                        <</p> <p class="d-inline-block next-buttons">>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="bg-white letssee products-section">
+                    <img src="./assets\fossil ch 2927i.jfif" alt="Fossil CH 2927I Briggs" class="w-100 image2">
+                    <div class="producttext">
+                        <p class="image1text">Fossil CH 2927I Briggs</p>
+                        <p class="features mb-0">Anolog Watch</p>
+                        <p class="features">For Men</p>
+                        <div>
+                            <div class="d-inline-block">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                            </div>
+                            <div class="d-inline-block price-section">
+                                <p class="price">&#8377;93,500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white letssee products-section">
+                    <img src="./assets\BPL 108 cm.jpeg" alt="BPL 108 cm" class="w-100 image2">
+                    <div class="producttext">
+                        <p class="image1text">BPL 108 cm</p>
+                        <p class="features">BPL 108 cm (43 inch) Ultra HD (4K) LED Smart TV</p>
+                        <div>
+                            <div class="d-inline-block">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                            </div>
+                            <div class="d-inline-block price-section">
+                                <p class="price">&#8377;93,500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white letssee products-section">
+                    <img src="./assets\Dolphin fabric.jpeg" alt="Dolphin fabric" class="w-100 image2">
+                    <div class="producttext">
+                        <p class="image1text">Dolphin Fabric</p>
+                        <p class="features">3 + 2 Grey Brown Sofa Set (configuration -L-shaped )</p>
+                        <div>
+                            <div class="d-inline-block">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                            </div>
+                            <div class="d-inline-block price-section">
+                                <p class="price">&#8377;93,500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white letssee products-section">
+                    <img src="./assets\HP DeskJet.jpeg" alt="HP DeskJet" class="w-100 image2">
+                    <div class="producttext">
+                        <p class="image1text">HP DeskJet</p>
+                        <p class="features">Ink Tank GT 5810 Multi-function printer(Black)</p>
+                        <div>
+                            <div class="d-inline-block">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                            </div>
+                            <div class="d-inline-block price-section">
+                                <p class="price">&#8377;93,500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white letssee products-section">
+                    <img src="./assets\Royal Oak Atlas.jpg" alt="Royal Oak Atlas" class="w-100 image2">
+                    <div class="producttext">
+                        <p class="image1text">Royal Oak Atlas</p>
+                        <p class="features">Engineered Wood Coffee Table (Finish Color - Dark Brown)</p>
+                        <div>
+                            <div class="d-inline-block">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                            </div>
+                            <div class="d-inline-block price-section">
+                                <p class="price">&#8377;93,500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="row backgr">
+        <div>
+            <div class="row deals-section">
+                <div class="col-xl-3 text-white text-center deals">
+                    <p> Deals of the Day</p>
+                    <p>08 : 32 : 29</p>
+                </div>
+                <div class="col-xl-2 bg-white timer-section letssee  products-section">
+                    <img src="./assets\fossil ch 2927i.jfif" alt="Fossil CH 2927I Briggs" class="w-100  image2">
+                    <div class="producttext">
+                        <p class="image1text">Fossil CH 2927I Briggs</p>
+                        <p class="features mb-0">Anolog Watch</p>
+                        <p class="features">For Men</p>
+                        <div>
+                            <div class="d-inline-block">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                            </div>
+                            <div class="d-inline-block price-section">
+                                <p class="price">&#8377;93,500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 bg-white timer-section letssee  products-section">
+                    <img src="./assets\BPL 108 cm.jpeg" alt="BPL 108 cm" class="w-100  image2">
+                    <div class="producttext">
+                        <p class="image1text">BPL 108 cm</p>
+                        <p class="features">BPL 108 cm (43 inch) Ultra HD (4K) LED Smart TV</p>
+                        <div>
+                            <div class="d-inline-block">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                            </div>
+                            <div class="d-inline-block price-section">
+                                <p class="price">&#8377;93,500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 bg-white timer-section letssee products-section">
+                    <img src="./assets\Dolphin fabric.jpeg" alt="Dolphin fabric" class="w-100  image2">
+                    <div class="producttext">
+                        <p class="image1text">Dolphin Fabric</p>
+                        <p class="features">3 + 2 Grey Brown Sofa Set (configuration -L-shaped )</p>
+                        <div>
+                            <div class="d-inline-block">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                            </div>
+                            <div class="d-inline-block price-section">
+                                <p class="price">&#8377;93,500</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-2 bg-white timer-section letssee  products-section">
+                    <img src="./assets\HP DeskJet.jpeg" alt="HP DeskJet" class="w-100  image2">
+                    <div class="producttext">
+                        <p class="image1text">HP DeskJet</p>
+                        <p class="features">Ink Tank GT 5810 Multi-function printer(Black)</p>
+                        <div>
+                            <div class="d-inline-block">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                                <img class="rating-icon" src="./assets/star.png" alt="">
+                            </div>
+                            <div class="d-inline-block price-section">
+                                <p class="price">&#8377;93,500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="row bg-light prod-showcase-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl prod-showcase">
+                    <div class="abovefooter bg-white">
+                        <div class="text-center">
+                            <p class="text-success m-0">Xbox</p>
+                            <p>Gaming Console</p>
+                        </div>
+                        <img src="./assets\Xbox Gaming Concole.jpg" alt="Xbox Gaming Concole" class="w-100">
+                    </div>
+                </div>
+                <div class="col-xl prod-showcase">
+                    <div class="abovefooter bg-white">
+                        <div class="text-center">
+                            <p class="text-success m-0">Nike</p>
+                            <p>Running Shoe</p>
+                        </div>
+                        <img src="./assets/nike.jpg" alt="Nike Running Shoe" class="w-100">
+                    </div>
+                </div>
+                <div class="col-xl prod-showcase">
+                    <div class="abovefooter bg-white">
+                        <div class="text-center">
+                            <p class="text-success m-0">Phone</p>
+                            <p>LeEco Le2</p>
+                        </div>
+                        <img src="./assets/above-footer-phone.jpg" alt="Nike Running Shoe" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="row bg-white">
+        <div class="container footer-section">
+            <div class="row">
+                <div class="col-xl-2 col-12 col-sm-6 co-md-4 col-lg-3 footer-block footer-text-section">
+                    <h4>Shopio</h4>
+                    <p class="footer-summary">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+                <div class="col-xl-3 col-12 col-sm-6 co-md-4 col-lg-3 footer-block">
+                    <h6>POLICY INFO</h6>
+                    <div class="privacy">
+                        <p class="m-0"><a href="" class="text-dark">Privacy Policy</a></p>
+                        <p class="m-0"> <a href="" class="text-dark">Terms of Sale</a></p>
+                        <p class="m-0"> <a href="" class="text-dark">Terms of Use</a></p>
+                        <p class="m-0"> <a href="" class="text-dark">Reports Abuse & Takedown Policy</a></p>
+                        <p class="m-0"><a href="" class="text-dark">CSR Policy</a></p>
+                    </div>
+
+                </div>
+                <div class="col-xl-2 col-12 col-sm-6 co-md-4 col-lg-3 footer-block">
+                    <h6>COMPANY</h6>
+                    <div class="privacy">
+                        <p class="m-0"><a href="" class="text-dark">About As</a></p>
+                        <p class="m-0"> <a href="" class="text-dark">Blog</a></p>
+                        <p class="m-0"><a href="" class="text-dark">Site Map</a></p>
+                        <p class="m-0"><a href="" class="text-dark">FAQ</a></p>
+                        <p class="m-0"><a href="" class="text-dark">Contact Us</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-12 col-sm-6 co-md-4 col-lg-3 footer-block">
+                    <h6>BUSINESS</h6>
+                    <div class="privacy">
+                        <p class="m-0"> <a href="" class="text-dark">Sell on Shopio</a></p>
+                        <p class="m-0"> <a href="" class="text-dark">Advertise on Shopio</a></p>
+                        <p class="m-0"> <a href="" class="text-dark">Media enquries</a></p>
+                        <p class="m-0"><a href="" class="text-dark">Be an Affilitate</a></p>
+                        <p class="m-0"><a href="" class="text-dark">Deal of The Day</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-12 col-sm-6 co-md-4 col-lg-3 footer-block">
+                    <h6>SUBSCRIBE</h6>
+                    <form action="/action_page.php" class="m-0">
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="Your Email Address">
+                        <input type="submit" class="bg-dark submit-button text-white">
+                    </form>
+                    <p class="footer-summary">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section>
+        <div class="text-center copyrights">
+            <p>CopyRight 2016 All Rights Reservered</p>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
